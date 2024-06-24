@@ -53,18 +53,19 @@ class _LoginPageState extends ConsumerState<LoginPage> {
 
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Form(
-        key: formKey,
-        child: DecoratedBox(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(ImageConstants.backgroundChair),
-              opacity: 0.3,
-              fit: BoxFit.cover,
-            ),
+      resizeToAvoidBottomInset: false,
+      body: DecoratedBox(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(ImageConstants.backgroundChair),
+            opacity: 0.2,
+            fit: BoxFit.cover,
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(30.0),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Form(
+            key: formKey,
             child: CustomScrollView(
               slivers: [
                 SliverFillRemaining(

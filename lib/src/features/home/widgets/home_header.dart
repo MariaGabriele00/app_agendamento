@@ -68,6 +68,7 @@ class HomeHeader extends ConsumerWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(width: 78),
                   IconButton(
                     onPressed: () {
                       ref.read(homeAdmVmProvider.notifier).logout();
