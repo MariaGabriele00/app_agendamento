@@ -48,7 +48,7 @@
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 36-->[androidx.core:core:1.6.0] /home/mariagabi/.gradle/caches/transforms-3/974b4f2252348b5ef43741b27d416a49/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 37        android:debuggable="true"
-38        android:icon="@mipmap/ic_launcher"
+38        android:icon="@mipmap/launcher_icon"
 39        android:label="app_agendamento" >
 40        <activity
 41            android:name="com.example.app_agendamento.MainActivity"
