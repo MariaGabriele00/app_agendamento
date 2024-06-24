@@ -7,6 +7,7 @@
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin.json
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES
+/home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/packages/timezone/data/latest_all.tzf
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/teste
 /home/mariagabi/Documents/projects/app_agendamento/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/background_image_chair.jpg

@@ -1,0 +1,1 @@
+ /home/mariagabi/Documents/projects/app_agendamento/.dart_tool/flutter_build/1d889cf1ddd43e860c132c6c7ccc7218/native_assets.yaml: 

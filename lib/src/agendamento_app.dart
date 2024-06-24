@@ -11,6 +11,7 @@ import 'features/auth/login/login_page.dart';
 import 'features/employee/register/employee_register_page.dart';
 import 'features/employee/schedule/employee_schedule_page.dart';
 import 'features/home/adm/home_adm_page.dart';
+import 'features/home/employee/home_employee_page.dart';
 import 'features/register/register/customer_register_page.dart';
 import 'features/schedules/schedule_page.dart';
 
@@ -34,7 +35,7 @@ class AgendamentoApp extends StatelessWidget {
             '/auth/register/user': (_) => const UserRegisterPage(),
             '/auth/register/company': (_) => const CustomerRegisterPage(),
             '/home/adm': (_) => const HomeAdmPage(),
-            '/home/employee': (_) => const Text('Employee'),
+            '/home/employee': (_) => const HomeEmployeePage(),
             '/employee/register': (_) => const EmployeeRegisterPage(),
             '/employee/schedule': (_) => const EmployeeSchedulePage(),
             '/schedule': (_) => const SchedulePage(),
