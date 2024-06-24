@@ -6,10 +6,12 @@ class AppointmentDs extends CalendarDataSource {
         Appointment(
           startTime: DateTime.now(),
           endTime: DateTime.now().add(const Duration(hours: 1)),
+          subject: 'Teste teste',
         ),
         Appointment(
-            startTime: DateTime.now().add(const Duration(hours: 2)),
-            endTime: DateTime.now().add(const Duration(hours: 3)),
-            subject: 'Teste teste'),
+          startTime: DateTime.now().add(const Duration(hours: 2)),
+          endTime: DateTime.now().add(const Duration(hours: 3)),
+          subject: 'Teste teste',
+        ),
       ];
 }
