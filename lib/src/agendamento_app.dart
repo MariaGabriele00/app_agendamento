@@ -3,6 +3,7 @@ import 'package:app_agendamento/src/features/register/user/user_register_page.da
 import 'package:app_agendamento/src/features/splash/splash_page.dart';
 import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'core/ui/agendamento_theme.dart';
 import 'core/ui/widgets/agendamento_loader.dart';
@@ -19,26 +20,34 @@ class AgendamentoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AsyncStateBuilder(
-        customLoader: const AgendamentoLoader(),
-        builder: (asyncNavigatorObserver) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Agendamentos',
-            theme: AgendamentoTheme.themeData,
-            navigatorObservers: [asyncNavigatorObserver],
-            navigatorKey: AgendadoNavGlobalKey.instance.navKey,
-            routes: {
-              '/': (_) => const SplashPage(),
-              '/auth/login': (_) => const LoginPage(),
-              '/auth/register/user': (_) => const UserRegisterPage(),
-              '/auth/register/company': (_) => const CustomerRegisterPage(),
-              '/home/adm': (_) => const HomeAdmPage(),
-              '/home/employee': (_) => const Text('Employee'),
-              '/employee/register': (_) => const EmployeeRegisterPage(),
-              '/employee/schedule': (_) => const EmployeeSchedulePage(),
-              '/schedule': (_) => const SchedulePage(),
-            },
-          );
-        });
+      customLoader: const AgendamentoLoader(),
+      builder: (asyncNavigatorObserver) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Agendamentos',
+          theme: AgendamentoTheme.themeData,
+          navigatorObservers: [asyncNavigatorObserver],
+          navigatorKey: AgendadoNavGlobalKey.instance.navKey,
+          routes: {
+            '/': (_) => const SplashPage(),
+            '/auth/login': (_) => const LoginPage(),
+            '/auth/register/user': (_) => const UserRegisterPage(),
+            '/auth/register/company': (_) => const CustomerRegisterPage(),
+            '/home/adm': (_) => const HomeAdmPage(),
+            '/home/employee': (_) => const Text('Employee'),
+            '/employee/register': (_) => const EmployeeRegisterPage(),
+            '/employee/schedule': (_) => const EmployeeSchedulePage(),
+            '/schedule': (_) => const SchedulePage(),
+          },
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [Locale('pt', 'BR')],
+          locale: const Locale('pt', 'BR'),
+        );
+      },
+    );
   }
 }
